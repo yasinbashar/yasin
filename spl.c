@@ -21,7 +21,7 @@ int main()
     {
         x =x + (s-batsman1.score[i])*(s-batsman1.score[i]);
     }
-     x= sqrt(x/2);
+     x= sqrt(x/5);
     scanf("%s",batsman2.name);
     s= 0;
     double x2=0;
@@ -33,15 +33,15 @@ int main()
     for(i=0;i<5;i++){
         x2 =x2 +(s-batsman2.score[i])*(s-batsman2.score[i]);
     }
-    x2 = sqrt(x2/2);
+    x2 = sqrt(x2/5);
     if(x>x2){
-        printf("More consistant player is %s",batsman2.name,x2,x);
+        printf("Best player is %s",batsman2.name,x2,x);
     }
     else if(x<x2){
-        printf("More consistant player is %s",batsman1.name,x,x2);
+        printf("best player is %s",batsman1.name,x,x2);
     }
     else{
-        printf("Both are equally consistant");
+        printf("Both are best");
     }
 
     return 0;
